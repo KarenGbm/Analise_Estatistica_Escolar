@@ -1,0 +1,129 @@
+# Análise de Desempenho Escolar
+
+## 📌 Sobre o projeto
+
+Este projeto tem como objetivo analisar os fatores que influenciam o desempenho acadêmico dos alunos, utilizando técnicas de análise de dados e modelos de regressão linear.
+
+O dataset utilizado foi obtido no Kaggle e contém informações relacionadas ao comportamento e desempenho dos estudantes.
+
+---
+
+## 🎯 Objetivos
+
+* Identificar fatores que impactam a nota dos alunos
+* Analisar relações entre variáveis (correlação)
+* Construir modelos preditivos com regressão linear
+* Validar a qualidade dos dados
+
+---
+
+## 📂 Dataset
+
+O conjunto de dados contém informações como:
+
+* 📚 Horas estudadas
+* 😴 Horas dormidas
+* 📅 Frequência (%)
+* 🎯 Nota dos alunos
+
+---
+
+## 🔍 Etapas da análise
+
+### ✔️ 1. Análise exploratória de dados (EDA)
+
+* Verificação de valores nulos
+* Análise de tipos de dados
+* Verificação do tamanho do dataset
+* Estatísticas descritivas
+
+---
+
+### ✔️ 2. Correlação entre variáveis
+
+Foi realizada análise de correlação para entender a relação entre as variáveis.
+
+📌 Resultado:
+
+* Horas estudadas apresentaram forte correlação com a nota
+* Outras variáveis apresentaram correlação mais fraca
+
+---
+
+### ✔️ 3. Regressão Linear Simples
+
+Modelo utilizando apenas **horas estudadas** como variável explicativa.
+
+📊 Resultado:
+
+* R² = **0.61**
+
+📌 Interpretação:
+
+* Existe uma relação linear moderada entre horas estudadas e nota
+
+---
+
+### ✔️ 4. Regressão Linear Múltipla
+
+Modelo utilizando:
+
+* horas estudadas
+* horas dormidas
+* frequência
+
+📊 Resultado:
+
+* R² = **0.68**
+
+📌 Interpretação:
+
+* O modelo múltiplo apresentou melhora em relação ao modelo simples.
+* O desempenho dos alunos é influenciado por múltiplos fatores.
+
+✔️ 5. Análise de coeficientes
+
+Coeficientes encontrados:
+
+📚 Horas estudadas → 1.62 (maior impacto)
+
+😴 Horas dormidas → 0.57 (impacto moderado)
+
+📅 Frequência → 0.12 (baixo impacto)
+
+📌 Conclusão:
+
+O tempo de estudo é o principal fator determinante para a nota, mas não o único.
+
+✔️ 6. Análise de outliers
+
+Foi realizada verificação de possíveis valores atípicos (outliers) para garantir a qualidade dos dados.
+
+⚙️ Tecnologias utilizadas
+
+Python
+
+Pandas
+
+NumPy
+
+Scikit-learn
+
+Matplotlib
+
+Seaborn
+
+📈 Conclusão
+
+A análise mostrou que:
+
+O tempo de estudo é o fator mais relevante para o desempenho acadêmico
+
+Outras variáveis como sono e frequência contribuem, mas com menor impacto
+
+Modelos com múltiplas variáveis apresentam melhor capacidade explicativa nesta situação
+
+fonte de dados : https://www.kaggle.com/datasets/grandmaster07/student-exam-performance-dataset-analysis/discussion/678927
+
+👨‍💻 Autor
+Projeto desenvolvido por: Karen Guimarães Benedicto Monteiro.
